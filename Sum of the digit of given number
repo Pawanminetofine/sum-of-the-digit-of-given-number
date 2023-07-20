@@ -1,0 +1,17 @@
+//sum of the digit of the given number
+#include <stdio.h>
+int n,sum;
+int main(){
+    printf("enter the value of the n");
+    scanf("%d",&n);
+    while(n!=0){
+        int a=n%10;
+        n=n/10;
+        sum=sum+a;
+    }
+   printf("sum of the digit of the given number is %d",sum);
+    return 0;
+}
+//challenge 1  why we use while instesd of for loop 
+//challenge 2 why we divide n by 10 not any other number
+//just think************
